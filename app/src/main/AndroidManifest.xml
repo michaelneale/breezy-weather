@@ -556,6 +556,13 @@
 
         </provider>
 
+        <receiver android:name=".WeatherMCP" android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ACTION_MMCP_DISCOVERY" />
+                <action android:name="com.example.ACTION_MMCP_INVOKE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
