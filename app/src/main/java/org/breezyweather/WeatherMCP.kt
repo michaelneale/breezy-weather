@@ -10,7 +10,6 @@ class WeatherMCP : BroadcastReceiver() {
         when (intent?.action) {
             "com.example.ACTION_MMCP_DISCOVERY" -> {
                 val bundle = Bundle().apply {
-                    putString("instructions", "Provides weather information.")
                     putStringArray("tools", arrayOf("getWeather"))
                     putString("getWeather.description", "Returns current weather for given location.")
                     putString("getWeather.parameters", "{\"location\": \"string\"}")
