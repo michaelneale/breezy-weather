@@ -22,7 +22,7 @@ class WeatherMCP : BroadcastReceiver() {
                 val params = intent.getStringExtra("params") // JSON string
 
                 val result = when (tool) {
-                    "getWeather" -> "Weather is sunny, 25°C"
+                    "getWeather" -> "Weather is sunny, 25°C - params: " + params
                     else -> "Unknown tool"
                 }
 
